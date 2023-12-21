@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <style>
+        
+        .c1{
+            border:2px solid black; height:100px; width:100px; border-bottom:none; border-left:none; border-radius:50px;
+            animation-name: cir1;
+            animation-duration:1s;
+            animation-iteration-count: infinite;
+        }
+        
+        
+        @keyframes cir1{
+            25%{
+                transform: rotate(90deg);
+            }
+            50%{
+                transform: rotate(180deg);
+            }
+            75%{
+                transform: rotate(270deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+                
+            }
+        
+
+
+        
+        .cal1{
+            border:1px solid black; height:150px; width:150px; border-radius:10px;text-align:center;animation-name: calendar;
+           animation-duration:1s;
+           transform-origin:50% 0;
+        }
+        
+       .cal:hover{
+           
+           
+       } 
+        
+        .ym{
+            background-color:orange; padding:10px; margin:0; border-radius: 10px 10px 0 0; color:white;
+        }
+        
+        .dd{
+             margin: 0; font-size:30px;
+        }
+        h1{
+            line-height:0px; font-size:55px;
+        }
+        
+        span{color:orange; font-size:25px;}
+        
+        @keyframes calendar {
+            25%{
+                transform:rotate(20deg)
+            }
+            
+            50%{
+                transform:rotate(-20deg)
+            }
+            
+            75%{
+                transform:rotate(10deg)
+            }
+            
+            100%{
+                transform:rotate(-10deg)
+            }
+        }
+
+        
+        </style>
+        
+
+
+    </head>
+    
+    
+    <body>
+        
+     <div class="c1">
+         
+     </div>
+     <hr>
+     
+     <div class="cal1">
+         <p class="ym">June 2022</p>
+         <p class="dd"><H1>21</H1><span>Tuesday</span></p>
+      </div>
+         
+         
+   
+    </body>
+</html>
